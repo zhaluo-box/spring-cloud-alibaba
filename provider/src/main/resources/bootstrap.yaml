@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        name: provider
+        group: DEFAULT_GROUP
+        file-extension: yaml  # 指定配置文件后缀， 与nacos中的配置文件格式相同
+        encode: utf-8
+        namespace: dev   # 命名空间， 用来区分不同环境，进行配置隔离
+
+  application:
+    name: provider
+
+server:
+  port: 9090
+
+
+
+#config:
+#  address: 192.168.10.1
+#  port: 10909
