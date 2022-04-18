@@ -8,10 +8,21 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="common-api" />
+        <module name="storage-api" />
+        <module name="account-api" />
         <module name="provider" />
+        <module name="storage-service" />
+        <module name="order-service" />
+        <module name="order-api" />
+        <module name="account-service" />
         <module name="consumer" />
         <module name="gateway" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="order" options="" />
+    </option>
   </component>
 </project>

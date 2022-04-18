@@ -1,0 +1,37 @@
+server:
+  port: 19999
+
+spring:
+  application:
+    name: account-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.13.10:3306/cloud-alibaba?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&useSSL=false
+    username: root
+    password: root
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+      discovery:
+
+
+mybatis-plus:
+  type-aliases-package: org.example.account.api
+  mapper-locations: classpath*:mapper/**/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+    multiple-result-sets-enabled: true
+    lazy-loading-enabled: true
+  global-config:
+    banner: false
+    db-config:
+      id-type: auto
+      table-underline: true
+logging:
+  level:
+    root: info
+    org.example.storage: debug
+

@@ -3,8 +3,6 @@ spring:
     nacos:
       config:
         server-addr: 127.0.0.1:8848
-#        name: provider-test.yaml
-#        group: DEFAULT_GROUP
 
   application:
     name: consumer
@@ -12,6 +10,5 @@ spring:
 server:
   port: 9088
 
-config:
-  address: 192.168.10.1
-  port: 10909
+
+
