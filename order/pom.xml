@@ -6,6 +6,7 @@
     <modules>
         <module>order-api</module>
         <module>order-service</module>
+        <module>order-client</module>
     </modules>
     <parent>
         <artifactId>spring-cloud-alibaba</artifactId>
@@ -20,7 +21,7 @@
 
     <properties>
         <java.version>11</java.version>
-        <order.version>1.0-SNAPSHOT</order.version>
+        <order.version>0.0.1-SNAPSHOT</order.version>
     </properties>
 
     <dependencies>

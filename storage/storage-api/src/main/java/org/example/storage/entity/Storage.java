@@ -14,9 +14,9 @@ import lombok.experimental.Accessors;
  * @author zl
  */
 @Data
-@Accessors(chain = true)
 @EqualsAndHashCode
-@TableName("storage_tbl")
+@Accessors(chain = true)
+@TableName(value = "storage_tbl",autoResultMap = true)
 public class Storage {
 
     @TableId(type = IdType.AUTO)
