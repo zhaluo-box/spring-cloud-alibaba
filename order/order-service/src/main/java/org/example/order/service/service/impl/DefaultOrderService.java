@@ -1,9 +1,11 @@
 package org.example.order.service.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import org.example.accout.client.exchange.AccountService;
 import org.example.order.api.entity.Order;
 import org.example.order.service.mapper.OrderMapper;
 import org.example.order.service.service.OrderService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -15,6 +17,9 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class DefaultOrderService extends ServiceImpl<OrderMapper, Order> implements OrderService {
 
+    @Autowired
+    private AccountService accountService;
+
     @Override
     @Transactional(rollbackFor = Exception.class)
     public Order create(String userId, String commodityCode, int orderCount) {
@@ -25,7 +30,6 @@ public class DefaultOrderService extends ServiceImpl<OrderMapper, Order> impleme
         Order order = new Order().setCommodityCode(commodityCode).setUserId(userId).setCount(orderCount).setMoney(orderMoney);
         save(order);
         return order;
-
     }
 
     private int calculate(String commodityCode, int orderCount) {

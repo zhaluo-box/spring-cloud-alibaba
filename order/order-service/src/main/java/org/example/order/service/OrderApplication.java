@@ -11,7 +11,7 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
  *
  * @author zl
  */
-@EnableFeignClients
+@EnableFeignClients(basePackages = { "org.example" })
 @EnableDiscoveryClient
 @SpringBootApplication
 @MapperScan("org.example.order.service.mapper")

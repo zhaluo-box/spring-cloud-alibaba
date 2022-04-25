@@ -2,7 +2,7 @@ package org.example.storage.client.exchange;
 
 import org.example.common.core.constants.ServiceNameConstant;
 import org.example.storage.api.StorageApi;
-import org.example.storage.client.exchange.factory.DefaultStorageServiceFallbackFactory;
+import org.example.storage.client.factory.DefaultStorageServiceFallbackFactory;
 import org.springframework.cloud.openfeign.FeignClient;
 
 /**

@@ -14,6 +14,8 @@ spring:
       config:
         server-addr: 127.0.0.1:8848
         file-extension: yml
+      discovery:
+        server-addr: 127.0.0.1:8848
 
 mybatis-plus:
   type-aliases-package: org.example.storage
@@ -32,4 +34,7 @@ logging:
   level:
     root: info
     org.example.storage: debug
+  file:
+    path: logs/
+    name: logs/order/order.log
 
