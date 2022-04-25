@@ -22,8 +22,9 @@ public class DefaultBusinessService implements BusinessService {
 
     @Override
     public void purchase(String userId, String commodityCode, int orderCount) {
+        // 扣减库存
         storageService.deduct(commodityCode, orderCount);
-
+        // 创建订单
         orderService.create(userId, commodityCode, orderCount);
     }
 }

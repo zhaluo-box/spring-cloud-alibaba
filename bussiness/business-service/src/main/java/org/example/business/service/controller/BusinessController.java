@@ -28,7 +28,6 @@ public class BusinessController {
      */
     @PostMapping
     public ResponseEntity<Void> purchase(@RequestParam String userId, @RequestParam String commodityCode, @RequestParam int orderCount) {
-
         businessService.purchase(userId, commodityCode, orderCount) ;
         return ResponseEntity.ok().build();
     }

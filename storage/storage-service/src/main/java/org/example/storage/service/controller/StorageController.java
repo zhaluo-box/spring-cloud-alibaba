@@ -6,6 +6,7 @@ import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -25,7 +26,7 @@ public class StorageController {
      * 扣减库存
      */
     @PostMapping
-    public ResponseEntity<Void> deduct(String commodityCode, Integer count) {
+    public ResponseEntity<Void> deduct(@RequestParam String commodityCode, @RequestParam Integer count) {
         storageService.deduct(commodityCode, count);
         return ResponseEntity.ok().build();
     }
