@@ -1,0 +1,2 @@
+org\example\order\client\exchange\OrderService.class
+org\example\order\client\factory\DefaultOrderServiceFallbackFactory.class

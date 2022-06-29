@@ -1,0 +1,5 @@
+org\example\order\service\OrderApplication.class
+org\example\order\service\controller\OrderController.class
+org\example\order\service\mapper\OrderMapper.class
+org\example\order\service\service\impl\DefaultOrderService.class
+org\example\order\service\service\OrderService.class

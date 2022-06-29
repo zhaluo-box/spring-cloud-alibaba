@@ -1,0 +1,2 @@
+org\example\storage\client\exchange\StorageService.class
+org\example\storage\client\factory\DefaultStorageServiceFallbackFactory.class

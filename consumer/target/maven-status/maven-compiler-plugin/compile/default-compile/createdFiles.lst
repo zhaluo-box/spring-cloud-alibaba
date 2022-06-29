@@ -1,0 +1,3 @@
+com\example\cloud\alibaba\consumer\controller\ConsumerController.class
+com\example\cloud\alibaba\consumer\ConsumerApplication.class
+com\example\cloud\alibaba\consumer\feign\service\ProviderService.class

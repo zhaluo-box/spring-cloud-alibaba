@@ -19,6 +19,7 @@
         <module>order</module>
         <module>bussiness</module>
         <module>common</module>
+        <module>test-module</module>
     </modules>
     <properties>
 
@@ -26,9 +27,14 @@
         <!--  根据官方文档。配置了属性就可以不再配置 maven.compiler plugin    -->
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
-        <spring.cloud.alibaba>2.2.7.RELEASE</spring.cloud.alibaba>
-        <spring.boot.dependenies>2.3.12.RELEASE</spring.boot.dependenies>
-        <spring.cloud.denpendencies>Hoxton.SR12</spring.cloud.denpendencies>
+
+
+        <!-- alibaba 与 cloud 、boot 的版本兼容说明 https://github.com/alibaba/spring-cloud-alibaba/wiki/%E7%89%88%E6%9C%AC%E8%AF%B4%E6%98%8E       -->
+
+        <spring.cloud.alibaba>2021.1</spring.cloud.alibaba>
+        <spring.boot.dependenies>2.4.2</spring.boot.dependenies>
+        <spring.cloud.denpendencies>2020.0.5</spring.cloud.denpendencies>
+
         <lombok.version>1.18.20</lombok.version>
         <mybaits-plus.version>3.5.1</mybaits-plus.version>
         <!-- TODO　dependencyManagement 中的依赖版本统一有properties 管理　　-->

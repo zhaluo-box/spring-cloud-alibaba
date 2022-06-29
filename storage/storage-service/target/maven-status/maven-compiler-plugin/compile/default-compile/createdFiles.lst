@@ -1,0 +1,5 @@
+org\example\storage\service\service\impl\DefaultStorageService.class
+org\example\storage\service\mapper\StorageMapper.class
+org\example\storage\service\StorageApplication.class
+org\example\storage\service\service\StorageService.class
+org\example\storage\service\controller\StorageController.class
