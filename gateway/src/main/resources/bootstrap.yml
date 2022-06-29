@@ -12,7 +12,6 @@ spring:
             - StripPrefix=1
 
 
-
 logging:
   file:
     name: /home/logs/${spring.application.name}/${spring.application.name}.log
